@@ -371,6 +371,7 @@ header nav div {
   background-color: #7361e7;
   padding: 80px 30px;
   color: #ffffff;
+  overflow: hidden;
 }
 
 .section4-container {
@@ -378,32 +379,31 @@ header nav div {
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
-  gap: 40px;
+  gap: 60px;
 }
 
 .section4-left {
-  flex: 1;
+  flex: 0.8;
   display: flex;
   flex-direction: column;
   gap: 25px;
 }
 
 .section4-right {
-  flex: 1;
+  flex: 1.2;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .section4-right img {
-  max-width: 100%;
-  height: auto;
+  height: 700px;
+  width: 500px;
   border-radius: 5px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
 }
 
 .section4-header p {
-  font-family: "Open Sans", sans-serif;
   font-size: 12px;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -429,23 +429,17 @@ header nav div {
 }
 
 .section4-button {
-  background: #ffffff;
-  color: #7361e7;
+  background: transparent;
+  color: #fff;
   border: none;
   border-radius: 30px;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  font-weight: 500;
-  padding: 12px 30px;
   cursor: pointer;
   align-self: flex-start;
   margin-top: 10px;
   transition: all 0.3s ease;
-}
-
-.section4-button:hover {
-  background: rgba(255, 255, 255, 0.9);
-  transform: translateY(-2px);
+  text-decoration: underline;
 }
 
 .section4-logos {
